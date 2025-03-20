@@ -5,6 +5,7 @@ import * as L from 'leaflet';
 import { icon, latLng, marker, Map, point, polyline, tileLayer, LatLngBounds, latLngBounds } from 'leaflet';
 import { DialogContentExample, DialogContentExampleDialog } from './components/modal/modal.component.js'
 import { Point } from './models/point.js';
+import data from './points.json';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ import { Point } from './models/point.js';
 })
 export class AppComponent implements OnInit {
   dialog=inject(MatDialog)
-  data: Point[] = [
+  /*data: Point[] = [
     {
       "title":"утинская сурковая колония",
       "description": `Находится на территории Буинского района, севернее деревни Утинка (нежилая).
@@ -25,11 +26,11 @@ export class AppComponent implements OnInit {
       "position": [55.5, 52, 0],
       "image": "./assets/images/photo_2025-03-19_17-00-26.jpg"
     }
-  ]
+  ]*/
 
   ngOnInit() {
 
-    this.options.layers =  this.data.map(d=>
+    this.options.layers =  data.map(d=>
       marker(latLng([d.position[0], d.position[1], d.position[2]]),
       {
         icon: icon({
@@ -38,7 +39,7 @@ export class AppComponent implements OnInit {
           iconUrl: './assets/images/marker-icon.png',
           shadowUrl: './assets/images/marker-shadow.png'
         })
-      }).on('click', (event) => { this.openDialog(d); }))
+      }).on('click', (event) => { this.openDialog(<Point>d); }))
 
     this.options.layers.push(this.streetMaps)
 
