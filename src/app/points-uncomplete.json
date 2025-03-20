@@ -129,5 +129,26 @@
         ],
         "description": "",
         "image": ""
+    },
+
+    {
+        "title": "Чулпан",
+        "position": [
+            55.2000,
+            50.8000,
+            0
+        ],
+        "description": "",
+        "image": ""
+    },
+    {
+        "title": "Спасский",
+        "position": [
+            55.0667,
+            49.6667,
+            0
+        ],
+        "description": "",
+        "image": ""
     }
 ]

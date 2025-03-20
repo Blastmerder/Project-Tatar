@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
   // Define our base layers so we can reference them multiple times
   streetMaps = tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom:16,
-    minZoom: 7
+    minZoom: 5
     
   });
   
