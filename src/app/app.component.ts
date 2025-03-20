@@ -15,18 +15,6 @@ import data from './points.json';
 })
 export class AppComponent implements OnInit {
   dialog=inject(MatDialog)
-  /*data: Point[] = [
-    {
-      "title":"утинская сурковая колония",
-      "description": `Находится на территории Буинского района, севернее деревни Утинка (нежилая).
-Выделен в 1987 году. Площадь 50 га с охранной зоной шириной 20 м.
-Колония сурка-байбака занимает остепненные склоны долины небольшой речки – левого притока реки Карла.
-Из редких видов растений встречаются адонис весенний, ковыль-волосатик, из животных – лунь полевой, лебедь-шипун (на пролете), суслик крапчатый, слепушонка.
-Объект имеет 100-летнюю историю изучения.`,
-      "position": [55.5, 52, 0],
-      "image": "./assets/images/photo_2025-03-19_17-00-26.jpg"
-    }
-  ]*/
 
   ngOnInit() {
 
@@ -50,7 +38,7 @@ export class AppComponent implements OnInit {
   // Define our base layers so we can reference them multiple times
   streetMaps = tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom:16,
-    minZoom: 8
+    minZoom: 7
     
   });
   
