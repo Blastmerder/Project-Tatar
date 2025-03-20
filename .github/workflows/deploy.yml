@@ -27,5 +27,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages # Ветка для публикации
-          folder: dist/Project-Tatar # Папка с собранным проектом
+          folder: /home/runner/work/Project-Tatar/Project-Tatar/dist/project-tatar # Папка с собранным проектом
           token: ${{ secrets.ACCESS_TOKEN }} # Секретный токен

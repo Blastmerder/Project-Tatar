@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularPwa": {
+    "Project-Tatar": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "AngularPwa:build:production"
+              "buildTarget": "Project-Tatar:build:production"
             },
             "development": {
-              "buildTarget": "AngularPwa:build:development"
+              "buildTarget": "Project-Tatar:build:development"
             }
           },
           "defaultConfiguration": "development"
