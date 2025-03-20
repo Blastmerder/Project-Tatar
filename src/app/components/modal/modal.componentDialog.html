@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>{{ data.title }}</h2>
+<mat-dialog-content class="mat-typography">
+    <div width="100%" style="height: 150px;">
+        <img [src]="data.image" [alt]="data.title" width="100%" style="object-fit: cover; width: 100%; height: 100%;">
+    </div>
+  <p>{{ data.description }}</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Ok</button>
+</mat-dialog-actions>
