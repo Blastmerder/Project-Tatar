@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "baseHref": "/Project-Tatar/",
-            "outputPath": "dist/angular-pwa",
+            "outputPath": "dist/project-tatar",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
